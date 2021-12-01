@@ -4,7 +4,7 @@ import { lang } from "./languages.js";
 const List = (data) => {
     const elements = data.map((item) =>
         `<div class="scheda">
-                <a href="/tv-series.html?id=${item.id}">
+                <a href="TV-Series/tv-series.html?id=${item.id}">
                     <img src="${PATH}${item.backdrop_path}">
                     <div class="titles">
                         <p>${item.name}</p>

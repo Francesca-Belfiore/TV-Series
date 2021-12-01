@@ -33,7 +33,7 @@ function View(id = 0) {
                             </div>
                         </div>
                     <br>
-                    <a href="/index.html" id="back">${lang.back2home}</a>`
+                    <a href="https://francesca-belfiore.github.io/TV-Series/" id="back">${lang.back2home}</a>`
                     );
 
                     article.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});

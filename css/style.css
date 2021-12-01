@@ -17,15 +17,14 @@ header {
     z-index: 1;
     padding-left: 75px;
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
-    /* box-shadow: 8px 8px 100px black; */
 }
 
 .hero {
     height: 370px;
-    background-image: url("/img/netflix-image.webp");
-    background-position: right;
+    background-position: 20% center;
     background-repeat: no-repeat;
     border-bottom: 10px solid #222222;
+    transition: background-image 0.35s ease;
 }
 
 #logo {
@@ -33,7 +32,7 @@ header {
     width: 240px;
 }
 
-.account {
+.changeLanguage {
     position: absolute;
     right: 50px;
     top: 50px;
@@ -44,32 +43,61 @@ header p {
     height: 42px;
 }
 
-#avatar {
-    width: 48px;
-    height: 48px;
-    display: inline-block;
+select {
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 2px;
+    border-radius: 2px;
 }
 
 
 /* MAIN */
 
 main {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-
-    min-width: 550px;
 
     padding: 25px;
     background-color: #000;
     color: #fff;
     
+    display: flex;
+    flex-wrap: nowrap;    
+}
+
+#container {
+    width: 90%;
+}
+
+.arrows {
+    background: transparent;
+    border: none;
+    color: rgb(207, 207, 207);
+    cursor: pointer;
+    font-size: 80px;
+    margin: 5px;
+    padding-top: 50px;
+}
+
+.arrows:hover {
+    color: white;
 }
 
 .schede {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 15px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    width: 95%;
+    margin: auto;
 }
+
+.schede::-webkit-scrollbar {
+    display: none;
+}
+
 
 .scheda {
     display: flex;
@@ -113,6 +141,33 @@ main img {
     opacity: 1;
 }
 
+/* DESCRIPTION */
+
+article {
+    padding-top: 60px;
+    width: 75%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+article h1, a {
+    margin-left: 1.5%;
+}
+
+article .description {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 25px;
+    margin: auto;
+}
+
+/* hr {
+    opacity: 0;
+} */
+
+.description img {
+    margin: auto;
+}
 
 /* FOOTER */
 
@@ -122,7 +177,7 @@ footer {
     bottom: 0;
 
     margin: 70px auto 20px;
-    padding: 70px 200px 20px;
+    padding: 70px 15% 20px;
     font-size: 16px;
     color: #757575;
     text-align: left;
@@ -143,12 +198,4 @@ footer li {
 footer li:hover, num:hover {
     text-decoration: underline;
     cursor: pointer;
-}
-
-video {
-    position: absolute;
-    top: 0px;
-    left: 57%;
-    height: 370px;
-    z-index: -1;
 }

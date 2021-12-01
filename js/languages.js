@@ -1,5 +1,5 @@
 const ita = {
-    "title": "Top SerieTV <small>su Netflix (e non solo!)</small>",
+    "title": "Top Serie TV",
 
     "footerTitle": "Domande? Chiama <num>800-123-456</num>",
     "footer1": "Domande frequenti",
@@ -29,7 +29,7 @@ const ita = {
 }
 
 const eng = {
-    "title": "Top TV Series <small>on Netflix (and more!)</small>",
+    "title": "Top TV Series",
 
     "footerTitle": "Questions? Call <num>800-123-456</num>",
     "footer1": "FAQ",

@@ -29,7 +29,8 @@ header {
 
 #logo {
     display: inline-block;
-    width: 240px;
+    width: 320px;
+    margin-top: 100px;
 }
 
 .changeLanguage {

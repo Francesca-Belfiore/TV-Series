@@ -17,7 +17,7 @@ const loadBg = () =>
 
             function cycleBg() {
 
-                images.forEach((image,i) => {
+                images.forEach((image, i) => {
                     setTimeout(()=> {
                         hero.style.backgroundImage = `url("https://image.tmdb.org/t/p/original/${images[i]}")`;
                     }, i * 6000);
@@ -25,7 +25,7 @@ const loadBg = () =>
             }
 
             cycleBg();
-            setInterval(cycleBg, 120000);
+            setInterval(cycleBg, (images.length * 6000));
         })
     )
 
@@ -33,7 +33,9 @@ export {loadBg};
 
 export function rendFooter() {
     const footer = document.querySelector("footer");
-    render(footer, `
+    render(footer, `<div>
+    <a href="https://github.com/Francesca-Belfiore"><img src="https://img.icons8.com/ios-filled/35/ffffff/github.png"/></a>
+    <a href="https://www.linkedin.com/in/francescabelfiore/"><img src="https://img.icons8.com/ios-filled/36/ffffff/linkedin.png"/></a>
     <p>${lang.footerTitle}</p>
 
     <ul>
@@ -55,5 +57,5 @@ export function rendFooter() {
         <li>${lang.footer16}</li>
     </ul>
 
-    <small>Copyright 2021 - Francesca Belfiore - TV Series</small>`
+    <small>© 2021 - Francesca Belfiore - TV Series</small></div>`
 )}

@@ -28,7 +28,7 @@ function View(id = 0) {
                                 <h3>Trailer:</h3>
                                 <iframe type="text/html" width="320" height="240"
                                     src="https://www.youtube.com/embed/${trailerURL}"
-                                    frameborder="0">
+                                    frameborder="0" allowfullscreen>
                                 </iframe>  
                             </div>
                         </div>

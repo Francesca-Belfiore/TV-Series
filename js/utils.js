@@ -34,8 +34,8 @@ export {loadBg};
 export function rendFooter() {
     const footer = document.querySelector("footer");
     render(footer, `<div>
-    <a href="https://github.com/Francesca-Belfiore"><img src="https://img.icons8.com/ios-filled/35/ffffff/github.png"/></a>
-    <a href="https://www.linkedin.com/in/francescabelfiore/"><img src="https://img.icons8.com/ios-filled/36/ffffff/linkedin.png"/></a>
+    <a href="https://github.com/Francesca-Belfiore"><img src="https://img.icons8.com/ios-filled/35/ffffff/github.png" alt="github logo"></a>
+    <a href="https://www.linkedin.com/in/francescabelfiore/"><img src="https://img.icons8.com/ios-filled/36/ffffff/linkedin.png" alt="linkedin logo"></a>
     <p>${lang.footerTitle}</p>
 
     <ul>

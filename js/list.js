@@ -5,7 +5,7 @@ const List = (data) => {
     const elements = data.map((item) =>
         `<div class="scheda">
                 <a href="tv-series.html?id=${item.id}">
-                    <img src="${PATH}${item.backdrop_path}">
+                    <img src="${PATH}${item.backdrop_path}" alt="${item.name} poster">
                     <div class="titles">
                         <p>${item.name}</p>
                         ${(item.first_air_date).substring(0, 4)}

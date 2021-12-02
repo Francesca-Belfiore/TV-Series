@@ -1,5 +1,5 @@
 # TV-Series
-## My project for the Edgemony Bootcamp CodeWeek!
+
 
 Just a little web app that shows the most popular TV series of the week extracted from the MovieDB API.
 
@@ -14,6 +14,7 @@ For true fans of TV series!
 
 <ul>
 <li> List always updated</li>
+<li> Series overview and platform</li>
 <li> Multi-languages support:</li>
     <ul>
     <li> Italian</li>

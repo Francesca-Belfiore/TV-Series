@@ -20,7 +20,7 @@ function View(id = 0) {
                     render(article, `                
                     <h1>${serie.name}</h1>
                         <div class="description">
-                            <img src="${PATH}${serie.poster_path}">
+                            <img src="${PATH}${serie.poster_path}" alt="poster">
                             <div>                             
                                 <h3>${lang.description}:</h3><p>${serie.overview}</p>
                                 <p>${lang.year}: ${(serie.first_air_date).substring(0, 4)}, ${lang.genre}: ${serie.genres[0].name}</p>

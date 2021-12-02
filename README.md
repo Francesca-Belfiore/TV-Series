@@ -10,7 +10,7 @@ For true fans of TV series!
 
 <h2>Feature:</h2>
 
-<img align = "right" src="img/tv-series-responsive.png" width = "350px">
+<img align = "right" src="img/tv-series-responsive.png" width = "450px">
 
 <ul>
 <li> List always updated</li>

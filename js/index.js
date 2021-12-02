@@ -1,5 +1,6 @@
-import { API, loadBg, rendFooter } from "./utils.js";
+import { API, loadBg, rendFooter, render } from "./utils.js";
 import { List } from "./list.js";
+import {lang} from "./languages.js";
 
 loadBg();
 
@@ -42,3 +43,19 @@ leftBtn.onclick = function () {
 
 
 rendFooter();
+
+const modal = document.querySelector(".modal");
+const modalMessage = document.querySelector(".modalMessage");
+const modalBtn = document.querySelector(".modalBtn");
+
+if (localStorage.getItem("CookieAccepted")) {} else {
+
+    modal.style.top = "0";
+    
+    modalBtn.addEventListener("click", () => {
+        modal.style.top = "-100px";
+        localStorage.setItem("CookieAccepted", "yes");
+    })
+}
+
+render(modalMessage, `${lang.modal}`);

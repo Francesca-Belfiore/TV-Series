@@ -203,6 +203,41 @@ footer li:hover, num:hover {
 }
 
 
+/* MODAL */
+
+.modal {
+    background-color: #222222;
+    padding: 15px;
+    border-radius: 5px;
+    width: 100%;
+    position: fixed;
+    margin: auto;
+    top: -100px;
+    color: whitesmoke;
+    text-align: center;
+    z-index: 1;
+    transition: all 0.35s ease;
+}
+
+.modal .modalMessage {
+    display: inline;
+}
+
+.modal button {
+    background-color: rgba(245, 245, 245, 0.5);
+    padding: 0.5px 3px;
+    border-color: 1px solid whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+.modal button:hover {
+    background-color: rgba(245, 245, 245, 0.25);
+    border-color: rgba(245, 245, 245, 0.5);
+}
+
+
 /* RESPONSIVE */
 
 @media screen and (max-width: 900px) {
@@ -239,6 +274,9 @@ footer li:hover, num:hover {
         flex-wrap: wrap;
         margin: auto;
     }
+    .modal {
+        margin-left: -20px;
+    }
   }
 
 @media screen and (max-width: 400px) {
@@ -247,3 +285,4 @@ footer li:hover, num:hover {
         margin-top: 130px;
     }
 }
+

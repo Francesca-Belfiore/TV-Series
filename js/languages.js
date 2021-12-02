@@ -1,4 +1,6 @@
 const ita = {
+    "modal": "🥠 Questo sito utilizza cookie di terze parti per offrirti un'esperienza migliore",
+
     "title": "Top Serie TV",
 
     "footerTitle": "Domande? Chiama <num>800-123-456</num>",
@@ -29,6 +31,8 @@ const ita = {
 }
 
 const eng = {
+    "modal": "🥠 This website uses third party cookie to offer you a better experience",
+
     "title": "Top TV Series",
 
     "footerTitle": "Questions? Call <num>800-123-456</num>",

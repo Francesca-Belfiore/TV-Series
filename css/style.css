@@ -21,8 +21,9 @@ header {
 
 .hero {
     height: 370px;
-    background-position: 20% center;
+    background-position: center 5%;
     background-repeat: no-repeat;
+    background-size: cover;
     border-bottom: 10px solid #222222;
     transition: background-image 0.35s ease;
 }

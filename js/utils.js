@@ -59,3 +59,7 @@ export function rendFooter() {
 
     <small>© 2021 - Francesca Belfiore - TV Series</small></div>`
 )}
+
+export function setLanguage(selectedLang) {
+    localStorage.setItem('language', selectedLang);
+}

@@ -1,7 +1,13 @@
-import { PATH, DETAILS, render, loadBg, rendFooter } from "./utils.js";
+import { PATH, DETAILS, render, loadBg, rendFooter, setLanguage } from "./utils.js";
 import { lang } from "./languages.js";
 
 loadBg();
+
+const changeLanguage = document.querySelector("#language");
+changeLanguage.addEventListener("change", () => {
+    setLanguage(changeLanguage.value);
+    location.reload();
+});
 
 const getId = () => parseInt(location.href.split("=")[1]);
 

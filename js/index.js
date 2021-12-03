@@ -1,8 +1,14 @@
-import { API, loadBg, rendFooter, render } from "./utils.js";
+import { API, loadBg, rendFooter, render, setLanguage } from "./utils.js";
 import { List } from "./list.js";
 import {lang} from "./languages.js";
 
 loadBg();
+
+const changeLanguage = document.querySelector("#language");
+changeLanguage.addEventListener("change", () => {
+    setLanguage(changeLanguage.value);
+    location.reload();
+});
 
 const loadList = () =>
     fetch(API)
